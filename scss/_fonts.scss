@@ -1,0 +1,44 @@
+/* Roboto Regular */
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/RobotoRegular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+       url('../fonts/RobotoRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/RobotoRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/RobotoRegular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/RobotoRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg'); /* Legacy iOS */
+}
+
+/* Sitka Banner */
+@font-face {
+  font-family: 'Sitka Banner';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/SitkaBanner.eot'); /* IE9 Compat Modes */
+  src: local('Sitka Banner'), local('Sitka-Banner'),
+       url('../fonts/SitkaBanner.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/SitkaBanner.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/SitkaBanner.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/SitkaBanner.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/SitkaBanner.svg#SitkaBanner') format('svg'); /* Legacy iOS */
+}
+
+/* SnellBT Regular */
+@font-face {
+  font-family: 'SnellBT Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/SnellBT-Regular.eot'); /* IE9 Compat Modes */
+  src: local('SnellBT Regular'), local('SnellBT-Regular'),
+       url('../fonts/SnellBT-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/SnellBT-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/SnellBT-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/SnellBT-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/SnellBT-Regular.svg#SnellBT') format('svg'); /* Legacy iOS */
+}

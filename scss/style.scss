@@ -1,0 +1,13 @@
+@import "libs";
+
+@import "fonts";
+@import "vars";
+@import "mixins";
+
+@import "global";
+
+body{
+	@extend %sitka;
+	@include font;
+	color: $rose;
+}
