@@ -8,6 +8,5 @@
 
 body{
 	@extend %sitka;
-	@include font;
-	color: $rose;
+	@include font;	
 }
