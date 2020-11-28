@@ -6,7 +6,203 @@
 
 @import "global";
 
+html{
+	height: 100%;
+}
+
 body{
 	@extend %sitka;
-	@include font;	
+	@include font;
+	height: 100%;
 }
+
+/* ====== SLIDER COMMON STYLES ====== */
+
+.slick-list{
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+}
+
+/* ====== HEADER ====== */
+
+.header{
+	position: relative;
+
+	height: 100vh;
+	width: 100%;
+
+	padding-bottom: 20px;
+}
+
+.header__container{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	right: 0;
+
+	background-color: #0a1720;
+
+	z-index: 2;
+}
+
+.header__inner{
+	margin: 0 auto;
+	width: 68.4%;
+
+	padding: 10px 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo{
+
+}
+
+.navigation{
+	width: 435px;
+}
+
+.navigation__list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation__item{
+	@extend %sitka;
+	@include font(16px, 12px, #a5a6a6, uppercase);
+
+	padding: 5px 0px;
+
+	border-right: 1px solid #a5a6a6;
+
+	&:last-child{
+		border: none;
+	}
+}
+
+.navigation__link{
+	padding: 10px 20px;
+	transition: .3s;
+
+	&:hover{
+		color: $rose;
+	}
+}
+
+.navigation__current{
+	border-color: transparent;
+
+	.navigation__link{
+		border-radius: 4px;
+
+		background-color: $rose;
+
+		color: #fff;
+
+		pointer-events: none;
+	}
+}
+
+/* slider main */
+
+.header__wrapper{
+	position: relative;
+	height:100%;
+}
+
+.slider{
+	position: relative;
+	z-index: 0;
+}
+
+.header__slider{
+	height: 100%;
+}
+
+.slider__item{
+	height: 100vh;
+
+	background-repeat: no-repeat;
+	background-position: 0 50px;
+	background-size: cover;
+}
+
+.slider__item--1{
+	background-image: url("../img/slide1.jpg");	
+}
+
+.slider__item--2{
+	background-image: url("../img/slide2.jpg");
+}
+
+/* slider nav */
+
+.slider-nav{
+	background-color: rgba(#0a1720, .5);
+}
+
+.header__slider-nav{
+	position: absolute;
+	bottom: 30px;
+	right: 220px;
+}
+
+.slider-nav__button{	
+	padding: 15px 15px 10px 15px;
+}
+
+/* header middle block */
+
+.header__info{
+	position: absolute;
+	top: 40%;
+	right: 0;
+
+	background-color: rgba(#0a1720, .5);
+
+	padding: 60px 40px 60px 60px;
+
+	width: 570px;
+}
+
+.header__info-heading{
+	@extend %sitka;
+	@include font(40px, 35px, #fff);
+
+	margin-bottom: 12px;
+}
+
+.heading__info-text{
+	@extend %sitka;
+	@include font(24px, 30px, #fff);
+}
+
+
+/* bottom button */
+
+.header__button{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+
+	transform: translateX(-50%);
+
+	width: 83px;
+	height: 83px;
+
+	background-color: $rose;
+	border-radius: 50%;
+
+	line-height: 0;
+
+	&:hover{
+		background-color: rgba($rose, .5);
+	}
+}
+
+

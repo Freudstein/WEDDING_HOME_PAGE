@@ -9,27 +9,27 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__container"> <!-- black bg -->
+		<div class="header__container">
 			<div class="header__inner">
 				<div class="header__logo">
 					<img src="img/logo.png" width="168" height="78" alt="Company logo">
 				</div>
 				<nav class="navigation">
 					<ul class="navigation__list">
-						<li class="navigation__item">
-							<a href="#">Home</a>
+						<li class="navigation__item navigation__current">
+							<a href="#" class="navigation__link">Home</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#">About</a>
+							<a href="#" class="navigation__link">About</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Gallery</a>
+							<a href="#" class="navigation__link">Gallery</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Blog</a>
+							<a href="#" class="navigation__link">Blog</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Contact</a>
+							<a href="#" class="navigation__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -37,36 +37,38 @@
 		</div>
 		<div class="header__wrapper">
 			<div class="slider header__slider">
-				<div class="slider__item"></div>
-				<div class="slider__item"></div>
+				<div class="slider__item slider__item--1"></div>
+				<div class="slider__item slider__item--2"></div>
 			</div>
 			<div class="header__slider-nav slider-nav">
-				<button class="slider-nav__button">
+				<button class="slider-nav__button slider-nav__button--prev">
 					<img src="img/arrow-left.png" width="20" height="31" alt="Arrow Left">
 				</button>
-				<button class="slider-nav__button">
+				<button class="slider-nav__button slider-nav__button--next">
 					<img src="img/arrow-right.png" width="20" height="31" alt="Arrow Right">
 				</button>
 			</div>
 			<div class="header__info">
 				<p class="header__info-heading">
-					Let your heart beat in the  rhythm of music
+					Let your heart beat in the rhythm of music
 				</p>
 				<p class="heading__info-text">
-					Lorem Ipsum is simply dummy text of the printing and typesettin
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...
 				</p>
 			</div>
 		</div>
-		<button class="header__button">
-			<img src="img/arrow-down.svg" width="26" height="43" alt="Next button">
-		</button>
+		<a href="#wedding">
+			<button class="header__button">
+				<img src="img/arrow-down.svg" width="26" height="43" alt="Next button">
+			</button>
+		</a>
 	</header>
 
 
 	<main>
 		<h1 class="visually-hidden">Wedding Home Page</h1>
 		
-		<section class="wedding">
+		<section class="wedding" id="wedding">
 			<p class="wedding__suptitle">Are getting married!</p>
 			<p class="wedding__heading">Groom and bride</p>
 			<img class="hearts" src="img/hearts.png" width="201" height="26" alt="Hearts">
@@ -281,5 +283,11 @@
 		</form>
 	</div>
 	
+
+	
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
