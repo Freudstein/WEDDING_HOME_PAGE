@@ -374,8 +374,18 @@ template {
   /* Legacy iOS */
 }
 
-body, .navigation__item, .header__info-heading, .heading__info-text {
+.wedding__suptitle {
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 400;
+}
+
+body {
   font-family: "Sitka Banner", sans-serif;
+  font-weight: 400;
+}
+
+.wedding__name, .wedding__invitation-heading {
+  font-family: "SnellBT Regular", sans-serif;
   font-weight: 400;
 }
 
@@ -628,3 +638,153 @@ body {
 .header__button:hover {
   background-color: rgba(255, 70, 127, 0.5);
 }
+
+/* ====== WEDDING ====== */
+.wedding {
+  padding-top: 90px;
+}
+
+.wedding__suptitle {
+  margin-bottom: 22px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ff467f;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wedding__heading {
+  margin-bottom: 35px;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hearts {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.wedding__info {
+  margin: 0 auto;
+  width: 68.4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* wedding image */
+.wedding__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wedding__person-image {
+  position: relative;
+}
+
+.wedding__person-image::before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  width: 302px;
+  height: 164px;
+  background-image: url("../img/person-border-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wedding__person-image::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: -6px;
+  width: 276px;
+  height: 159px;
+  background-image: url("../img/person-border-bottom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wedding__name {
+  font-size: 69px;
+  line-height: 78px;
+  text-align: center;
+}
+
+.wedding__invite {
+  width: 200px;
+  text-align: center;
+}
+
+/* wedding middle block invitation */
+.wedding__invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wedding__invitation-heading {
+  position: relative;
+  margin-bottom: 70px;
+  padding-left: 30px;
+  font-size: 69px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.wedding__invitation-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: 1px;
+  width: 238px;
+  background-color: #ff467f;
+}
+
+.wedding_day {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 38px;
+  line-height: 28px;
+  color: #ff467f;
+  text-transform: uppercase;
+}
+
+.wedding__date {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.wedding__place {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.wedding__button {
+  padding: 20px 65px 15px 65px;
+  font-size: 40px;
+  line-height: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.button {
+  margin-bottom: 110px;
+  background-color: #ff467f;
+  box-shadow: 4.092px 4.388px 14px 0px rgba(88, 88, 88, 0.73);
+}
+
+.button:hover {
+  background-color: rgba(255, 70, 127, 0.5);
+}
+
+/* ====== PHOTO GALLERY ====== */

@@ -73,7 +73,6 @@ body{
 }
 
 .navigation__item{
-	@extend %sitka;
 	@include font(16px, 12px, #a5a6a6, uppercase);
 
 	padding: 5px 0px;
@@ -171,14 +170,12 @@ body{
 }
 
 .header__info-heading{
-	@extend %sitka;
 	@include font(40px, 35px, #fff);
 
 	margin-bottom: 12px;
 }
 
 .heading__info-text{
-	@extend %sitka;
 	@include font(24px, 30px, #fff);
 }
 
@@ -206,3 +203,165 @@ body{
 }
 
 
+/* ====== WEDDING ====== */
+
+.wedding{
+	padding-top: 90px;
+}
+
+.wedding__suptitle{
+	margin-bottom: 22px;
+
+	@extend %roboto;
+	@include font(24px, 28px, $rose, uppercase);
+
+	text-align: center;
+}
+
+.wedding__heading{
+	margin-bottom: 35px;
+
+	@include font(48px, 48px, null, uppercase);
+
+	text-align: center;
+}
+
+.hearts{
+	display: block;
+	margin: 0 auto;
+
+	margin-bottom: 35px;
+}
+
+.wedding__info{
+	margin: 0 auto;
+	width: 68.4%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+/* wedding image */
+
+.wedding__person{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wedding__person-image{
+	position: relative;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: -23px;
+
+		width: 302px;
+		height: 164px;
+
+		background-image: url("../img/person-border-top.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: -4px;
+		left: -6px;
+
+		width: 276px;
+		height: 159px;
+
+		background-image: url("../img/person-border-bottom.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+}
+
+.wedding__name{
+	@extend %snellBT;
+	@include font(69px, 78px, null, null);
+
+	text-align: center;
+}
+
+.wedding__invite{
+	width: 200px;
+
+	text-align: center;
+}
+
+/* wedding middle block invitation */
+
+.wedding__invitation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wedding__invitation-heading{
+	position: relative;
+	margin-bottom: 70px;
+	padding-left: 30px;	
+
+	@extend %snellBT;
+	@include font(69px, 75px, null, null);
+
+	text-align: center;
+
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		right: 0;
+		margin-right: auto;
+		margin-left: auto;
+
+		height: 1px;
+		width: 238px;
+
+		background-color: $rose;
+	}
+}
+
+.wedding_day{
+	margin-top: 25px;
+	margin-bottom: 30px;
+
+	@include font(38px, 28px, $rose, uppercase);
+}
+
+.wedding__date{
+	margin-bottom: 20px;
+
+	@include font(48px, 28px, null, uppercase);
+}
+
+.wedding__place{
+	margin-bottom: 55px;
+
+	text-align: center;
+}
+
+.wedding__button{
+	padding: 20px 65px 15px 65px;
+
+	@include font(40px, 28px, #fff, uppercase);
+}
+
+.button{
+	margin-bottom: 110px;
+
+	background-color: $rose;
+	box-shadow: 4.092px 4.388px 14px 0px rgba(88, 88, 88, 0.73);
+
+	&:hover{
+		background-color: rgba($rose, .5);
+	}
+}
+
+/* ====== PHOTO GALLERY ====== */
