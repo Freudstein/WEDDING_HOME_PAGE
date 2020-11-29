@@ -374,7 +374,7 @@ template {
   /* Legacy iOS */
 }
 
-.wedding__suptitle {
+.wedding__suptitle, .news__date {
   font-family: "Roboto Regular", sans-serif;
   font-weight: 400;
 }
@@ -594,7 +594,8 @@ body {
 }
 
 .slider-nav__button {
-  padding: 15px 15px 10px 15px;
+  padding: 15px;
+  font-size: 0;
 }
 
 /* header middle block */
@@ -769,17 +770,10 @@ body {
   text-align: center;
 }
 
-.wedding__button {
-  padding: 20px 65px 15px 65px;
-  font-size: 40px;
-  line-height: 28px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
 .button {
-  margin-bottom: 110px;
+  padding: 15px 30px;
   background-color: #ff467f;
+  color: #fff;
   box-shadow: 4.092px 4.388px 14px 0px rgba(88, 88, 88, 0.73);
 }
 
@@ -787,4 +781,107 @@ body {
   background-color: rgba(255, 70, 127, 0.5);
 }
 
+.wedding__button {
+  margin-bottom: 110px;
+  padding: 20px 65px 15px 65px;
+  font-size: 40px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
 /* ====== PHOTO GALLERY ====== */
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: #252527;
+}
+
+.gallery__heading {
+  margin-bottom: 10px;
+  font-size: 45px;
+  line-height: 47px;
+  color: #fff;
+  text-align: center;
+}
+
+.gallery__hearts {
+  margin-bottom: 60px;
+}
+
+.galler__wrapper {
+  text-align: center;
+}
+
+.gallery__slider {
+  margin-bottom: 75px;
+}
+
+.gallery__slider-nav {
+  display: inline-block;
+  font-size: 0;
+}
+
+.slider-nav__button--rose {
+  background-color: rgba(255, 70, 127, 0.5);
+}
+
+.slider-nav__button--rose:hover {
+  background-color: #ff467f;
+}
+
+/* ====== NEWS & EVENTS ====== */
+.news {
+  padding-top: 60px;
+}
+
+.news__heading {
+  font-size: 56px;
+  line-height: 68px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.news__text {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 700px;
+  text-align: center;
+}
+
+.news__wrapper {
+  background-image: url("../img/news-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  padding-top: 328px;
+  padding-bottom: 128px;
+}
+
+.news__block {
+  margin-left: auto;
+  padding: 60px 50px;
+  background-color: #fff;
+  background-image: url("../img/flowers.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  width: 59.7%;
+}
+
+.news__date {
+  margin-bottom: 40px;
+  font-size: 54px;
+  line-height: 63px;
+  text-transform: uppercase;
+}
+
+.news__text-main {
+  margin-bottom: 15px;
+  width: 39.4%;
+  color: #ff467f;
+}
+
+.news__text-common {
+  margin-bottom: 90px;
+  width: 39.4%;
+}
