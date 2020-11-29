@@ -12,7 +12,7 @@
 	<header class="header">
 		<div class="header__container">
 			<div class="header__inner">
-				<div class="header__logo">
+				<div>
 					<img src="img/logo.png" width="168" height="78" alt="Company logo">
 				</div>
 				<nav class="navigation">
@@ -30,7 +30,7 @@
 							<a href="#" class="navigation__link">Blog</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link">Contact</a>
+							<a href="#" class="navigation__link js-modal">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -281,15 +281,18 @@
 		<p class="footer__copyright">&#169; 2018 &mdash; WeddingAllRights</p>
 	</footer>
 
-	<div class="modal">
+	<div class="modal modal-close">
 		<h2 class="modal__heading">Contact us</h2>
 		<form action="#" method="post" class="modal__form">
 			<input type="text" name="name" placeholder="Your Name" class="modal__input">
 			<input type="email" name="email" placeholder="Your E-mail" class="modal__input">
 			<textarea name="message" class="modal__textarea" placeholder="Your Message"></textarea>
-			<button class="modal__button button">Read More</button>
+			<button class="modal__button button">Contact Us</button>
 		</form>
+		<div class="modal__close-button"></div>
 	</div>
+
+	<div class="js-overlay"></div>
 	
 
 	
